@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevystCloud</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="profile.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+</head>
+<body>
+    <div class="container">
+        <header class="center">
+            <img src="profile.jpeg" alt="profile">            
+            <h1>DevystCloud</h1>
+            <P>Data Analyst & Website Developer. <br> Surabaya, Indonesia.</P>
+            <ul>
+                <li>
+                    <a href="https://www.linkedin.com/in/abizar-egi-mahendra">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa-brands fa-linkedin-in"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/devystcloud/">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa-brands fa-instagram"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="mailto:abizaregi7@gmail.com">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa-regular fa-envelope"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://api.whatsapp.com/send/?phone=6289515192171&text&type=phone_number&app_absent=0">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa-brands fa-whatsapp"></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/devyst">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span class="fa-brands fa-github"></span>
+                    </a>
+                </li>
+            </ul>
+
+
+
+
+        </header>
+        <div class="center">
+            <a class="btn" href="https://www.devyst.cloud/">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>Portfolio Website</span>
+            </a>
+
+            <a class="btn" href="https://weather.devyst.cloud/">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>Weather App</span>
+            </a>
+
+            <a class="btn" href="https://todo.devyst.cloud/">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>to do list App</span>
+            </a>
+
+            <a class="btn" href="https://play.devyst.cloud/">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>Music Playlist App</span>
+            </a>
+
+            <a class="btn" href="https://music.devyst.cloud/">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>Music Player App</span>
+            </a>
+
+            <a class="btn" href="https://time.devyst.cloud/">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>Digital Clock</span>
+            </a>
+
+            <a class="btn" href="https://coprogrammer.com/">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>Blog</span>
+            </a>
+
+            <a class="btn" href="https://speech.devyst.cloud/">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <span>Text to speech App</span>
+            </a>
+
+        </div>
+
+        <div class="footer">
+            <p class="footer-heart">
+                Made with 
+                <i class="fa-solid fa-heart"></i>
+                by 
+                <a href="https://devyst.cloud">Abizar Egi</a>
+            </p>
+        </div>
+    </div>
+    <script>
+        let btns = document.querySelectorAll('.btn');
+        btns.forEach(btn => {
+            btn.addEventListener('mousemove', e => {
+                let rect = e.target.getBoundingClientRect();
+                let x = e.clientX * 3 - rect.left;
+                btn.style.setProperty('--x', x + 'deg');
+            });
+        });
+    </script>    
+    <script src="https://kit.fontawesome.com/d43154f346.js" crossorigin="anonymous"></script>
+</body>
+</html>
